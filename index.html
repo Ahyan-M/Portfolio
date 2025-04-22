@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahyan Mehta | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#hero">AM</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button id="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h4 class="greeting">Hi, I'm</h4>
+                <h1 class="name">Ahyan Mehta</h1>
+                <h2 class="title">Full Stack Developer</h2>
+                <p class="bio">Building innovative web solutions with modern technologies and creative problem-solving.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <div class="glow"></div>
+                    <img src="images/profiles.jpg" alt="Ahyan Mehta">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate developer with expertise in both front-end and back-end technologies. My journey in programming began when I was 15, and since then I've been constantly learning and building projects to sharpen my skills.</p>
+                    <p>What drives me is the ability to solve real-world problems through code. I enjoy the entire development process, from conceptualizing ideas to implementing them as functional applications.</p>
+                    <p>When I'm not coding, you can find me playing cricket, exploring new technologies, or contributing to open-source projects.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Passion for Coding</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-skills">
+                    <h3>My Skills</h3>
+                    <div class="skills-mini">
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>HTML/CSS</span>
+                        <span>Node.js</span>
+                        <span>Git</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My <span>Skills</span></h2>
+            <div class="skills-tabs">
+                <button class="tab-btn active" data-tab="programming">Programming</button>
+                <button class="tab-btn" data-tab="tools">Tools</button>
+                <button class="tab-btn" data-tab="frameworks">Frameworks</button>
+            </div>
+            <div class="skills-content">
+                <div class="tab-content active" id="programming">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <img src="images/java.png" alt="Java">
+                            <h3>Java</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <img src="images/python.png" alt="Python">
+                            <h3>Python</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <img src="images/javascript.png" alt="JavaScript">
+                            <h3>JavaScript</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 73%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <img src="images/cpp.png" alt="C++">
+                            <h3>C++</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="tools">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <img src="images/git.png" alt="Git">
+                            <h3>Git</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <img src="images/pycharm.png" alt="PyCharm">
+                            <h3>PyCharm</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <img src="images/jupyter.png" alt="Jupyter">
+                            <h3>Jupyter</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <img src="images/vscode.png" alt="VS Code">
+                            <h3>VS Code</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="frameworks">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <img src="images/react.png" alt="React">
+                            <h3>React</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <img src="images/nodejs.png" alt="Node.js">
+                            <h3>Node.js</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 40%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <img src="images/django.png" alt="Django">
+                            <h3>Django</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 50%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <img src="images/flask.png" alt="Flask">
+                            <h3>Flask</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 55%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My <span>Projects</span></h2>
+            <div class="projects-grid">
+                <!-- Cricket Team Selection -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/cricket-project.png" alt="Cricket Team Selection">
+                        <div class="project-links">
+                            <a href="https://github.com/Ahyan-M/Cricket-Game" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" class="demo-btn" data-video="videos/cricket-team-selection.mp4"><i class="fas fa-play"></i> Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cricket Team Selection</h3>
+                        <p>Interactive web app for building fantasy cricket teams with budget constraints and player statistics.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fielding Selector -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/fielding-project.jpg" alt="Fielding Selector">
+                        <div class="project-links">
+                            <a href="https://github.com/Ahyan-M/Fielding-Selector" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" class="demo-btn" data-video="videos/fielding-selector.mp4"><i class="fas fa-play"></i> Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Fielding Selector</h3>
+                        <p>Cricket fielding position selector with interactive field map and player assignment functionality.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weather App -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/weather-project.jpg" alt="Weather App">
+                        <div class="project-links">
+                            <a href="https://github.com/Ahyan-M/Weather-App" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" class="demo-btn" data-video="videos/weather-app.mp4"><i class="fas fa-play"></i> Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather App</h3>
+                        <p>Desktop application providing real-time weather updates using OpenWeatherMap API.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>PyQt5</span>
+                            <span>API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- To-Do List -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/todo-project.png" alt="To-Do List">
+                        <div class="project-links">
+                            <a href="https://github.com/Ahyan-M/To-Do-List" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" class="demo-btn" data-video="videos/todo.mp4"><i class="fas fa-play"></i> Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>To-Do List</h3>
+                        <p>Interactive task management application with drag-and-drop functionality and priority sorting.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>ahyan.mehta@gmail.com</p>
+                        <a href="mailto:ahyan.mehta@gmail.com">Send Message</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>(647) 573-7590</p>
+                        <a href="tel:6475737590">Call Me</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p>Ahyan Mehta</p>
+                        <a href="https://www.linkedin.com/in/ahyanmehta1/" target="_blank">Connect</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p>Ahyan-M</p>
+                        <a href="https://github.com/Ahyan-M" target="_blank">View Profile</a>
+                    </div>
+                </div>
+                <div id="form-status" class="form-status"></div>
+                <form class="contact-form" action="https://formspree.io/f/xvgaokol" method="POST">
+                  <div class="form-group">
+                      <input type="text" id="name" name="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="form-group">
+                      <input type="email" id="email" name="email" placeholder="Your Email" required>
+                  </div>
+                  <div class="form-group">
+                      <input type="text" id="subject" name="subject" placeholder="Subject">
+                  </div>
+                  <div class="form-group">
+                      <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                  </div>
+                  <!-- Honeypot field for spam protection (hidden) -->
+                  <input type="text" name="_gotcha" style="display:none">
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="video-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <video controls id="project-video">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#hero">AM</a>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/Ahyan-M" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ahyanmehta1/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:ahyan.mehta@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Ahyan Mehta. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
